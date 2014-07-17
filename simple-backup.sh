@@ -87,7 +87,6 @@ function compress_dir() {
     [ $? -eq 0 ] && echo " done" || echo " failed"
 }
 
-
 for bk in "${backup[@]}"
 do
     if [[ "$(ls ${bk} 2>/dev/null)" || -d ${bk} ]]
@@ -95,7 +94,6 @@ do
         for bk_target in $bk;
         do
             echo "Target: \"$bk_target\"";
-            
             rotate_archive $bk_target $keep_archive
             compress_dir $bk_target
         done
