@@ -27,7 +27,7 @@
 
 backup=("/var/www/html/*" "/home/*" "/root");
 save_dir="/backups";
-keep_archive=2;
+keep_archive=7;
 
 function rotate_archive() {
 
