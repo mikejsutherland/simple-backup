@@ -94,8 +94,8 @@ do
         for bk_target in $bk;
         do
             echo "Target: \"$bk_target\"";
-            rotate_archive $bk_target $keep_archive
-            compress_dir $bk_target
+            rotate_archive "$bk_target" "$keep_archive"
+            compress_dir "$bk_target"
         done
     else
         echo "Missing backup target: $bk"
