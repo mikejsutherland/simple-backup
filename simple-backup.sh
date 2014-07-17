@@ -25,7 +25,7 @@
 # THE SOFTWARE.
 #
 
-backup=("/var/www/html/*" "/home/*" "/root");
+backup=("/var/www/html/*" "/home/*" "/root" "/etc");
 save_dir="/backups";
 keep_archive=7;
 
